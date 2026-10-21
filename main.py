@@ -1,10 +1,11 @@
 import requests
 from bs4 import BeautifulSoup
 
-#minecraft version verify api
+#minecraft version verifier api
 #MVVA
 url = "https://minecraft.wiki/w/Bedrock_Dedicated_Server"
 
+print("v0.1 \nBy BMRL\n")
 print(f"Requisitando na {url} ...")
 html_txt = requests.get(url, timeout=20)
 html_txt.raise_for_status()
